@@ -4,11 +4,12 @@ import UserDetails from "./UserDetails"
 import ButtonSection from "./ButtonSection"
 import "./Card.css";
 
-function Card() {
+function Card(props) {
+  const user = props.user
 
   return (
     <div className="contenedorDinamico">
-      <UserDetails/>
+      {/* <UserDetails user = {user} /> */}
       <ButtonSection/>
     </div>
 
