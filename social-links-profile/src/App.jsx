@@ -1,14 +1,13 @@
 import "./App.css";
 import avatarJessica from "../public/avatar-jessica.jpeg";
 function App() {
-
-
   return (
-    <> {/* es un fracment */}
-    <div className="card">
+    <>
+      {" "}
+      {/* es un fracment */}
+      <div className="card">
         <div className="contenedor">
-          
-          <img src={avatarJessica} alt="imagen de mujer"/>
+          <img src={avatarJessica} alt="imagen de mujer" />
 
           <h1>Jessica Randall</h1>
 
@@ -26,7 +25,7 @@ function App() {
         </div>
       </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
