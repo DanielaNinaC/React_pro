@@ -1,3 +1,4 @@
+
 .contenedorDinamico{
     background-color: var(--DarkGrey);
     height: 420px;
@@ -8,6 +9,7 @@
     justify-content: center;
     align-items: center;   
     text-align: center;
+    margin-bottom: 20px;
   }
 
   @media (min-width: 376px) {
@@ -15,7 +17,7 @@
       justify-content: center;
       align-items: center; 
          /* margin-top: 30px; */
-         scale: 1.2;
+         
     }
   }
   

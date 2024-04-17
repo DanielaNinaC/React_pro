@@ -2,7 +2,6 @@
     width: 200px;
     height: 180px;
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     align-content: center;
     justify-content: center;
@@ -14,7 +13,8 @@
       align-items: center;
       height: 70px; 
       width: 70px;
-      margin-left: 55px;
+      display: block;
+      margin-inline: auto;
     }
     .imagen {
       width: 100%;

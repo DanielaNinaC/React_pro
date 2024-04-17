@@ -1,22 +1,10 @@
 import React from "react";
 import "./UserDetails.css";
 import { useEffect,useState } from "react";
-const UserDetails = (props) => {
+const UserDetails = ({user}) => {
   
-  const [user, setUser] = useState({})
-  setUser(props.user);
-  useEffect(() => {
-  fetch("https://6611d8dc95fdb62f24edc940.mockapi.io/api/v2/users")
-    .then((res) => {
-      return res.json();
-    })
-    .then((data) => {
-      setUser(data[3])
-      console.log(data)
-    });
-
-}, [])
-
+  // const [user, setUser] = useState({})
+  
   return (
     <div className="contenedor1">
       <div className="cabeza">
