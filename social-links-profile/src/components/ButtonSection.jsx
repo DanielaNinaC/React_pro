@@ -6,11 +6,7 @@ const ButtonSection = ({socialLinks}) => {
     return (
 
         <div className = "contenedor2">
-            {
-                socialLinks.map(
-                    socialLink => <button key= {socialLink.name} className="botones">{socialLink.name}</button>
-                )
-            }
+           <button className="botones">Rick and Morty</button>
             
         </div>
     );

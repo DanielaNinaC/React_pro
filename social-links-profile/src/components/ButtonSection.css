@@ -1,11 +1,10 @@
 .contenedor2 {
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     flex-direction: column;
     height: 190px;
     width: 190px;
-    margin-top: 10px;
+    margin-top: 0px;
   }
   .botones {
     background-color: var(--Grey);
@@ -13,7 +12,7 @@
     color: var(--White);
     width: 100%;
     padding: 9px;
-    margin: 4px;
+    margin: 0px;
     border: none;
     border-radius: 5px;
     /* cursor: pointer; */

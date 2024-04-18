@@ -1,15 +1,24 @@
 import React from "react"
 import Card from "./components/Card"
 import { useEffect,useState } from "react";
+
+function NumAleatorios() {
+  const num = [];
+  for (let i = 0; i < 10; i++) {
+    num.push(Math.floor(Math.random() * 857)); 
+  }
+  num.toString();
+  return num;
+}
 function App() {
-  const [users, setUsers] = useState([])
+  const [characters, setcharacters] = useState([])
   useEffect(() => {
-    fetch("https://6611d8dc95fdb62f24edc940.mockapi.io/api/v2/users")
+    fetch("https://rickandmortyapi.com/api/character/" + NumAleatorios())
       .then((res) => {
         return res.json();
       })
       .then((data) => {
-        setUsers(data)
+        setcharacters(data)
         console.log(data)
       });
   
@@ -19,8 +28,8 @@ function App() {
       {" "}
       {/* es un fracment */}
       <div>
-      {users.map((user) => (
-        <Card key={user.id} user={user} />
+      {characters.map((character) => (
+        <Card key={character.id} character={character} />
       ))}
       </div>
 

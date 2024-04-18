@@ -5,12 +5,12 @@ import ButtonSection from "./ButtonSection"
 import "./Card.css";
 
 function Card(props) {
-  const user = props.user
-  const socialLinks = user["social-links"]
+  const character = props.character;
+  //const socialLinks = user["social-links"]
   return (
     <div className="contenedorDinamico">
-      <UserDetails user = {user} /> 
-      <ButtonSection socialLinks ={socialLinks}/>
+      <UserDetails character = {character} /> 
+      <ButtonSection />
     </div>
 
   )

@@ -1,7 +1,7 @@
 
 .contenedorDinamico{
     background-color: var(--DarkGrey);
-    height: 420px;
+    height: 220px;
     width: 240px;
     border-radius: 10px;
     display: flex;
