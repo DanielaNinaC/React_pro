@@ -1,24 +1,21 @@
 import React from "react";
 import "./CharacterDetails.css";
-import { useEffect,useState } from "react";
-const UserDetails = (props) => {
+import TextoConEstilo from "./TextoConEstilo";
+//const UserDetails = (props) => {
   
   // const [user, setUser] = useState({})
- const character = props.character;
+  const CharacterDetails = ({ personaje }) => {
   return (
-    <div className="contenedor">
-      <div className="primercomp">
-        <img
-          className="imagen"
-          src={character.image}
-          alt= ""
-        ></img>
-      </div>
-      <h1 className="nombre">{character.name}</h1>
-      <h2 className="descripcion">{character.type}</h2>
-      {/* <p className="descripcion">{character.species}, {character.gender}</p> */}
+    <>
+    <img className="imagen" src={personaje.image} alt={`avatar de ${personaje.name}`} />
+    <div className="descripcion">
+      <h2 className= "nombres">{personaje.name}</h2>
+      <p>
+        <TextoConEstilo texto={personaje.status} />
+      </p>
     </div>
+  </>
   );
 };
 
-export default UserDetails;
+export default CharacterDetails;

@@ -6,7 +6,7 @@ const ButtonSection = ({socialLinks}) => {
     return (
 
         <div className = "contenedor2">
-           <button className="botones">Rick and Morty</button>
+           <button className="botones">Detalles</button>
             
         </div>
     );

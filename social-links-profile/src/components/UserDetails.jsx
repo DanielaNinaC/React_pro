@@ -9,7 +9,7 @@ const UserDetails = (props) => {
     <div className="contenedor1">
       <div className="cabeza">
         <img
-          className="imagen"
+          className="imagenes"
           src={character.image}
           alt= ""
         ></img>

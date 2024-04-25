@@ -1,15 +1,19 @@
 import React from "react"
 import "./EpisodeDetails.css";
 
-const ButtonSection = ({socialLinks}) => {
-   // console.log(socialLinks)
+const EpisodeDetails = ({ episodios }) => {
     return (
-
-        <div className = "contenedorE">
-           
-            <div className="rectangulo"></div>
+      
+        <div className="episodio">
+          {episodios.map((episodio) => (
+            <div key={episodio.id} className="episodioText">
+              <h3>{episodio.name} </h3>
+              <p>Fecha: {episodio.air_date} </p>
+            </div>
+          ))}
         </div>
+     
     );
-};
-
-export default ButtonSection;
+  };
+  
+  export default EpisodeDetails;

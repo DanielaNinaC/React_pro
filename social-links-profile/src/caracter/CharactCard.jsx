@@ -6,18 +6,16 @@ import EpsisodeDetails from "./EpisodeDetails"
 import CharacterDetails from './CharacterDetails'
 import "./CharactCard.css";
 
-function Card(props) {
-  const character = props.character;
+const CharactCard = ({ personaje, episodios }) =>{
   //const socialLinks = user["social-links"]
   return (
-    <div className="contenedorDinamico">
-      <CharacterDetails character = {character} /> 
-      <EpsisodeDetails/>
+    <div className="personaje">
+      <CharacterDetails personaje = {personaje} /> 
+      <EpsisodeDetails episodios={episodios}/>
       <ButtonSection />
-     
     </div>
 
   )
 }
 
-export default Card;
+export default CharactCard;

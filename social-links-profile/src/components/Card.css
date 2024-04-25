@@ -1,15 +1,16 @@
 
 .contenedorDinamico{
     background-color: var(--DarkGrey);
-    height: 220px;
-    width: 240px;
+    height: 210px;
+    width: 300px;
     border-radius: 10px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    flex-direction: row;
+    justify-content: space-around;
     align-items: center;   
     text-align: center;
     margin-bottom: 20px;
+    flex-wrap:wrap;
   }
 
   @media (min-width: 376px) {
@@ -17,6 +18,7 @@
       justify-content: center;
       align-items: center; 
          /* margin-top: 30px; */
+      flex-wrap:wrap;
          
     }
   }
